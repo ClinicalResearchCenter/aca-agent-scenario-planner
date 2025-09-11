@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KyKy Clothing Portfolio</title>
+  <meta name="description" content="Original apparel artwork and typographic designs by KyKy Clothing.">
+  <meta property="og:title" content="KyKy Clothing Portfolio">
+  <meta property="og:description" content="Original apparel artwork and typographic designs.">
+  <meta property="og:type" content="website">
+  <style>
+    :root { --ink:#111; --paper:#fafafa; --muted:#666; --accent:#c1121f; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper)}
+    .container{max-width:1080px;margin:0 auto;padding:0 20px}
+    .site_header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10}
+    .site_header .row{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{font-weight:700;letter-spacing:.5px}
+    .nav a{margin-left:16px;text-decoration:none;color:#222}
+    .hero_section{padding:72px 0;background:linear-gradient(180deg,#fff,#f2f2f2)}
+    .hero_section h1{font-size:40px;line-height:1.2;margin:0 0 12px}
+    .hero_section p{max-width:700px;margin:0 0 24px;color:#444}
+    .primary_btn{display:inline-block;padding:12px 18px;background:var(--ink);color:#fff;border-radius:12px;text-decoration:none}
+    .about_section{padding:56px 0}
+    .grid_two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .card{background:#fff;border:1px solid #eee;border-radius:14px;padding:18px}
+    .portfolio_section{padding:56px 0;background:#fff}
+    .grid_three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .work_card{background:#fff;border:1px solid #eee;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+    .work_card figure{margin:0}
+    .thumb{width:100%;display:block;aspect-ratio:4/3;background:#f7f7f7;display:flex;align-items:center;justify-content:center}
+    .work_card figcaption{padding:10px 12px;color:#444}
+    .contact_section{padding:56px 0}
+    .site_footer{padding:24px 0;text-align:center;color:var(--muted);border-top:1px solid #eee;background:#fff}
+    @media(max-width:900px){.grid_two,.grid_three{grid-template-columns:1fr} .hero_section h1{font-size:32px}}
+  </style>
+</head>
+<body>
+  <header class="site_header">
+    <div class="container row">
+      <div class="brand">KyKy Clothing</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero_section">
+      <div class="container">
+        <h1>Original shirt art and text concepts</h1>
+        <p>All artwork shown here is created by KyKy Clothing. This page exists to verify authorship for Redbubble and other stores.</p>
+        <a class="primary_btn" href="#portfolio">See work</a>
+      </div>
+    </section>
+
+    <section id="about" class="about_section">
+      <div class="container grid_two">
+        <div>
+          <h2>About the brand</h2>
+          <p>KyKy Clothing creates clean typography focused designs with subtle graphic accents. The style favors strong statements and minimal layouts that print well on many apparel colors. Every asset on this page was made by the brand owner.</p>
+        </div>
+        <div class="card">
+          <h3>Workflow</h3>
+          <ul>
+            <li>Layout in Canva or Adobe tools</li>
+            <li>Vector tweaks in Illustrator and raster finishing in Photoshop as needed</li>
+            <li>Print ready PNG size 4500 by 5400 pixels when required</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio_section">
+      <div class="container">
+        <h2>Recent work</h2>
+        <div class="grid_three">
+          <div class="work_card">
+            <figure>
+              <div class="thumb">
+                <!-- Inline SVG artwork to avoid external files -->
+                <svg viewBox="0 0 1200 900" width="100%" height="100%" role="img" aria-label="Freedom concept graphic">
+                  <rect x="0" y="0" width="1200" height="900" fill="#ffffff"/>
+                  <g style="font: 200px 'Arial Black', Arial, Helvetica, sans-serif; fill:#111">
+                    <text x="100" y="420" letter-spacing="18">FREED</text>
+                    <text x="820" y="420" letter-spacing="18">OM</text>
+                  </g>
+                  <!-- Splash above O and M -->
+                  <g fill="#a10b0b">
+                    <circle cx="935" cy="315" r="70"/>
+                    <circle cx="995" cy="310" r="28"/>
+                    <circle cx="900" cy="265" r="18"/>
+                    <circle cx="960" cy="245" r="14"/>
+                    <circle cx="1020" cy="270" r="16"/>
+                    <circle cx="980" cy="360" r="12"/>
+                  </g>
+                  <!-- Drip from O bottom -->
+                  <g fill="#a10b0b">
+                    <rect x="945" y="430" width="20" height="110" rx="10"/>
+                    <ellipse cx="955" cy="565" rx="30" ry="40"/>
+                  </g>
+                </svg>
+              </div>
+              <figcaption>Freedom concept with drip accent</figcaption>
+            </figure>
+          </div>
+
+          <div class="work_card">
+            <figure>
+              <div class="thumb"><span style="color:#999">Typographic series concept</span></div>
+              <figcaption>Monochrome text layout study</figcaption>
+            </figure>
+          </div>
+
+          <div class="work_card">
+            <figure>
+              <div class="thumb"><span style="color:#999">Symbol mark set</span></div>
+              <figcaption>Minimal icon marks for tees</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact_section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:kykyclothing@example.com">kykyclothing@example.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/" target="_blank" rel="noopener">instagram.com</a></p>
+        <p>Redbubble store: add your shop link once live</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site_footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> KyKy Clothing. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
